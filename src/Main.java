@@ -31,9 +31,10 @@ class fullName {
         Calendar current = Calendar.getInstance();
         int age = current.get(Calendar.YEAR) - dateCalendar.get(Calendar.YEAR);
         if (current.get(Calendar.DAY_OF_YEAR) < dateCalendar.get(Calendar.DAY_OF_YEAR)) age--;
+
         System.out.println("Фамилия И.О.: " + lastName + " " + initials);
         System.out.println("Пол: " + gender);
-        System.out.println("Возраст: " + age + " лет");
+        System.out.println("Возраст: " + age);
 
     }
 }
